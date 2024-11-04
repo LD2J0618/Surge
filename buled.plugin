@@ -3,13 +3,12 @@
 #!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1008.png
 
 [Rule]
-URL-REGEX,"^https:\/\/argo\.blued\.cn\/blued\/promote.*$"，REJECT
-URL-REGEX,"^https:\/\/argo\.blued\.cn\/blued\/adms\/.*$"，REJECT
-URL-REGEX,"^https:\/\/argo\.blued\.cn\/blued\/splash.*$"，REJECT
-URL-REGEX,"^https:\/\/argo\.blued\.cn\/blued\/launch\/adms$"，REJECT
-URL-REGEX,"^https:\/\/social\.blued\.cn\/users\/.*/joy$"，REJECT
-URL-REGEX,"^https:\/\/social\.blued\.cn\/users\/recommend$"，REJECT
-
+URL-REGEX, ^https:\/\/argo\.blued\.cn\/blued\/promote.*, REJECT
+URL-REGEX, ^https:\/\/argo\.blued\.cn\/blued\/adms\/.*, REJECT
+URL-REGEX, ^https:\/\/argo\.blued\.cn\/blued\/splash.*, REJECT
+URL-REGEX, ^https:\/\/argo\.blued\.cn\/blued\/launch\/adms$, REJECT
+URL-REGEX, ^https:\/\/social\.blued\.cn\/users\/.*/joy$, REJECT
+URL-REGEX, ^https:\/\/social\.blued\.cn\/users\/recommend$, REJECT
 [Script]
 http-request ^https:\/\/(burn-chatfiles|chatfiles|argo)\.(blued|bldimg)\.(cn|com)\/(((chatfiles|ingfiles|burn_chatfiles\/(videos|users))\/.*(mp4|jpg|(jpg|png))|blued\/qiniu\/chat)|.*).* script-path=https://gist.githubusercontent.com/Alex0510/23b38f5ad332e30d11a60a28ee4aa132/raw/bluedpic.js, tag=blued_pic
 
